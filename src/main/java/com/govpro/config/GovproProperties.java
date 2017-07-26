@@ -32,9 +32,7 @@ public class GovproProperties {
 
     private final Gateway gateway = new Gateway();
 
-    private final Ribbon ribbon = new Ribbon();
-
-    private final Registry registry = new Registry();
+   
 
     public Async getAsync() {
         return async;
@@ -52,9 +50,7 @@ public class GovproProperties {
         return mail;
     }
 
-    public Registry getRegistry() {
-        return registry;
-    }
+
 
     public Security getSecurity() {
         return security;
@@ -80,9 +76,7 @@ public class GovproProperties {
         return gateway;
     }
 
-    public Ribbon getRibbon() {
-        return ribbon;
-    }
+  
 
     public static class Async {
 
@@ -899,29 +893,5 @@ public class GovproProperties {
         }
     }
 
-    public static class Ribbon {
-
-        private String[] displayOnActiveProfiles;
-
-        public String[] getDisplayOnActiveProfiles() {
-            return displayOnActiveProfiles;
-        }
-
-        public void setDisplayOnActiveProfiles(String[] displayOnActiveProfiles) {
-            this.displayOnActiveProfiles = displayOnActiveProfiles;
-        }
-    }
-
-    private static class Registry {
-
-        private String password;
-
-        public String getPassword() {
-            return password;
-        }
-
-        public void setPassword(String password) {
-            this.password = password;
-        }
-    }
+   
 }
